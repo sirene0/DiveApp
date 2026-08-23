@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+    'rest_framework',
     'DiveApp',
     'alerts',
     'decompression',
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'gases',
     'statistic',
     'users',
+    
 ]
 
 MIDDLEWARE = [

@@ -3,7 +3,7 @@ from dives.models import Dive
 
 # Create your models here.
 class DecompressionModel(models.Model):
-    dive = models.ForeignKey(Dive, on_delete=models.CASCADE, related_name='decompression_models')
+    dive = models.ForeignKey('dives.Dive', on_delete=models.CASCADE, related_name='decompression_models')
     
     name = models.CharField(max_length=100)
     depth = models.FloatField(help_text="Depth in meters")
